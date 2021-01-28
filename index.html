@@ -47,10 +47,9 @@
           obj[e] = obj[e] ? obj[e] + 1 : 1;
         });
         for (let word in obj) {
-          words.push(`${word}:${obj[word]}`);
+          words.push(`${word}: ${obj[word]}`);
         }
         words.forEach((e) => {
-          let newRow = `<li>${e}</li>`;
           let li = document.createElement("li");
           li.appendChild(document.createTextNode(`${e}`));
           wordsList.appendChild(li);
